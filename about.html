@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="About, Company, Innovative Solutions" />
+  <meta name="description" content="Learn about who we are and what we do at Innovative Solutions." />
+  <meta name="author" content="Innovative Solutions" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>About Us - Innovative Solutions</title>
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    /* Gallery styles */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      width: calc(33% - 20px);
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item .title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 15px 0;
+      padding: 0 10px;
+    }
+
+    /* Counter Section Styles */
+    .counter-section {
+      background: #f4f4f4;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .counter-box {
+      display: inline-block;
+      width: 100%; /* Increase width of each counter box */
+      padding: 30px;
+      background-color: #020000;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 10px;
+      background-size: cover;
+      background-position: center;
+      color: #fffefe;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    /* Add background images to each counter box */
+    .counter-box:nth-child(1) {
+      background-image: url('images/p1.jpg');
+    }
+
+    .counter-box:nth-child(2) {
+      background-image: url('images/p2.jpg');
+    }
+
+    .counter-box:nth-child(3) {
+      background-image: url('images/p3.jpg');
+    }
+
+    .counter-box h3 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .counter-box p {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    /* Hover Effect */
+    .counter-box:hover {
+      transform: scale(1.05);
+    }
+
+    /* Modal styles */
+    .modal-content {
+      padding: 20px;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .modal-content h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .modal-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.jpg" alt="Hero Background">
+    </div>
+    <!-- Header Section Starts -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Location</span></a>
+            <a href="tel:+919840043602"><i class="fa fa-phone" aria-hidden="true"></i><span>Call : +91 9840043602</span></a>
+            <a href="mailto:sgssales@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><span>sgssales@gmail.com</span></a>
+          </div>
+          <div class="social_box">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">SGS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+               
+                <form class="form-inline">
+                  <button class="btn nav_search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends -->
+  </div>
+
+    <!-- about section -->
+    <section class="about_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-1">
+            <div class="detail-box pr-md-2">
+              <div class="heading_container">
+                <h2>Who We Are</h2>
+              </div>
+              <p>
+                At Innovative Solutions, we transform challenges into opportunities. Our team is dedicated to empowering businesses with customized, technology-driven solutions. With a focus on innovation, collaboration, and excellence, we aim to drive meaningful impact for our clients.
+              </p>
+              <a href="about.html" class="">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="img-box">
+              <img src="images/about-img.jpg" class="box_img" alt="About Us">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="counter-section">
+      <div class="container">
+        <div class="row">
+          <!-- Projects Completed -->
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3 id="projectCount">52</h3>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+          <!-- Locations Completed -->
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3 id="locationCount">30</h3>
+              <p>Locations Covered</p>
+            </div>
+          </div>
+          <!-- Employees in the Field -->
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3 id="employeeCount">140</h3>
+              <p>Employees in the Field</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="our_values_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2 style="font-size: 2.5rem; margin-bottom: 50px; text-align: center;">Our Core Values</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="value_box">
+              <img src="images/innovation.png" alt="Innovation" class="responsive-image">
+              <h5 style="font-size: 1.8rem; margin-top: 20px;">Innovation</h5>
+              <p style="font-size: 1.2rem;">We embrace creativity and innovation to deliver cutting-edge solutions.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value_box">
+              <img src="images/integrity.png" alt="Integrity" class="responsive-image">
+              <h5 style="font-size: 1.8rem; margin-top: 20px;">Integrity</h5>
+              <p style="font-size: 1.2rem;">We uphold the highest standards of integrity in all our actions.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value_box">
+              <img src="images/excellence.png" alt="Excellence" class="responsive-image">
+              <h5 style="font-size: 1.8rem; margin-top: 20px;">Excellence</h5>
+              <p style="font-size: 1.2rem;">We strive for excellence in everything we do, from service delivery to client engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .our_values_section {
+        padding: 60px 0;
+      }
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      .heading_container h2 {
+        text-align: center; /* Center-align the header */
+        font-weight: bold;
+        color: #333;
+      }
+    
+      .value_box {
+        text-align: center;
+        padding: 20px 15px;
+        margin-bottom: 50px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    
+      .responsive-image {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    
+      h5 {
+        color: #555;
+        font-weight: bold;
+      }
+    
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+    
+      @media (min-width: 768px) {
+        .value_box {
+          padding: 30px 20px;
+        }
+    
+        .responsive-image {
+          max-width: 70%;
+        }
+      }
+    </style>
+  
+    
+
+   <!-- info section -->
+   <section class="info_section ">
+    <div class="container">
+      <div class="info_top">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a class="navbar-brand" href="index.html">
+              SGS
+            </a>
+          </div>
+          <div class="col-md-5 ">
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +91 42112211
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="info_detail">
+              <h5>
+                Company
+              </h5>
+              <p>
+                SGS Electronics has been a trusted name in IT services, telecom infrastructure. 
+                We deliver innovative, reliable solutions that drive progress for our clients.
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="info_detail">
+              <h5>
+                Services
+              </h5>
+              <p>
+                Explore our wide range of services, including IT solutions, networking infrastructure, telecom project execution.
+            </p>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="">
+              <h5>
+                Useful links
+              </h5>
+              <ul class="info_menu">
+                <li>
+                  <a href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="service.html">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="team.html">
+                    Team
+                  </a>
+                </li>
+                <li class="mb-0">
+                  <a href="contact.html">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">SGS</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- footer section -->
+   <footer class="footer_section">
+     <div class="container">
+       <p>
+         &copy; <span id="displayYear"></span> All Rights Reserved By
+         <a href="https://html.design/">SGS</a>
+       </p>
+     </div>
+   </footer>
+   <!-- footer section -->
+   <script>
+     // Animated Counter for Projects, Locations, Employees
+     const animateCounter = (elementId, startValue, endValue, duration) => {
+       let startTime = null;
+       const element = document.getElementById(elementId);
+       const updateCounter = (timestamp) => {
+         if (!startTime) startTime = timestamp;
+         const progress = timestamp - startTime;
+         const value = Math.min(startValue + (endValue - startValue) * (progress / duration), endValue);
+         element.textContent = Math.floor(value);
+         if (progress < duration) requestAnimationFrame(updateCounter);
+       };
+       requestAnimationFrame(updateCounter);
+     };
+ 
+     // Set the values for the counters (example values)
+     window.onload = () => {
+       animateCounter('projectCount', 0, 50, 2000); // Projects Completed
+       animateCounter('locationCount', 0, 18, 2000); // Locations Covered
+       animateCounter('employeeCount', 0, 500, 2000); // Employees in the Field
+       document.getElementById("displayYear").textContent = new Date().getFullYear();
+     };
+   </script>
+  <!-- footer section -->
+</body>
+
+</html>
